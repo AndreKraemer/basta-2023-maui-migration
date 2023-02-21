@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "MigrationDemo.UWP (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MigrationDemo.UWP (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
