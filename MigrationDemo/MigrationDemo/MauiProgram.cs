@@ -1,4 +1,6 @@
 ﻿
+using CommunityToolkit.Maui;
+
 namespace MigrationDemo;
 
 public static class MauiProgram
@@ -7,8 +9,8 @@ public static class MauiProgram
 	{
 		var builder = MauiApp.CreateBuilder();
 		builder
-			.UseMauiApp<App>();
-
+			.UseMauiApp<App>()
+			.UseMauiCommunityToolkit();
 		return builder.Build();
 	}
 }
