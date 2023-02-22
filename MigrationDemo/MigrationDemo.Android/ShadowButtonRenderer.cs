@@ -1,13 +1,13 @@
 ﻿using Android.Content;
 using MigrationDemo;
 using MigrationDemo.Droid;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 [assembly: ExportRenderer(typeof(ShadowButton), typeof(ShadowButtonRenderer))]
 namespace MigrationDemo.Droid
 {
-    public class ShadowButtonRenderer : Xamarin.Forms.Platform.Android.AppCompat.ButtonRenderer
+    public class ShadowButtonRenderer : Platform.Android.AppCompat.ButtonRenderer
     {
         public ShadowButtonRenderer(Context context) : base(context)
         {

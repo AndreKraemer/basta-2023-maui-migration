@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MigrationDemo.Views.NewItemPage"
              Shell.PresentationMode="ModalAnimated"
              Title="New Item"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             xmlns:xct="http://xamarin.com/schemas/2020/toolkit" 
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" 
              xmlns:local="clr-namespace:MigrationDemo"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>

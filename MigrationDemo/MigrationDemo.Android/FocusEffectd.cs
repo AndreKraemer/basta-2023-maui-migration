@@ -1,6 +1,6 @@
 ﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 [assembly: ResolutionGroupName("MigrationDemo")]
 [assembly: ExportEffect(typeof(MigrationDemo.Droid.FocusEffect), nameof(MigrationDemo.Droid.FocusEffect))]

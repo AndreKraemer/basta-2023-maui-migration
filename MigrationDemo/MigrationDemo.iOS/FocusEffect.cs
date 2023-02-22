@@ -1,8 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using UIKit;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.iOS;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 [assembly: ResolutionGroupName("MigrationDemo")]
 [assembly: ExportEffect(typeof(MigrationDemo.iOS.FocusEffect), nameof(MigrationDemo.iOS.FocusEffect))]

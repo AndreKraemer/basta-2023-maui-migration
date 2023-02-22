@@ -1,7 +1,7 @@
 ﻿using MigrationDemo;
 using MigrationDemo.iOS;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.iOS;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 
 [assembly: ExportRenderer(typeof(ShadowButton), typeof(ShadowButtonRenderer))]
 namespace MigrationDemo.iOS
