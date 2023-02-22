@@ -6,17 +6,22 @@
              Title="New Item"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit" 
+             xmlns:local="clr-namespace:MigrationDemo"
              ios:Page.UseSafeArea="true">
     <ContentPage.Content>
         <StackLayout Spacing="3" Padding="15">
             <Label Text="Text" FontSize="Medium" />
             <Entry Text="{Binding Text, Mode=TwoWay}" FontSize="Medium"
-                   xct:SetFocusOnEntryCompletedBehavior.NextElement="{x:Reference DescriptionEditor}"/>
+                   xct:SetFocusOnEntryCompletedBehavior.NextElement="{x:Reference DescriptionEditor}">
+                <Entry.Effects>
+                    <local:FocusEffect />
+                </Entry.Effects>
+            </Entry>
             <Label Text="Description" FontSize="Medium" />
             <Editor x:Name="DescriptionEditor" Text="{Binding Description, Mode=TwoWay}" AutoSize="TextChanges" FontSize="Medium" Margin="0" />
             <StackLayout Orientation="Horizontal">
                 <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
-                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+                <local:ShadowButton Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></local:ShadowButton>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
